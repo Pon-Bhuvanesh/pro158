@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html >
+
+<head>  
+  <title>Virtual Tour</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+  <script src="js/Tour.js"></script>
+</head>
+
+<body>
+  <a-scene id="main-scene">
+
+    <a-sky id="main-container" radius="5000" color="#86a8b3"></a-sky>
+
+    <!-- Places Container -->
+    <a-entity id="places-container" tour></a-entity>
+
+    <!-- CAMERA -->
+    <a-camera id="camera" wasd-controls="enabled:false;">
+      <!-- App Title -->
+      <a-entity id="app-title" position="0 0.73 -1"
+        text="font: exo2bold; align: center; width: 3; color: black; value:!!! BOOKS THAT I LOVE !!!">
+        <a-entity id="app-subtitle" position="0 -0.12 0"
+          text="font: exo2bold; align: center; width: 2; color: red; value:tamilinda"></a-entity>
+      </a-entity>
+
+    </a-camera>
+  </a-scene>
+</body>
+
+</html>
